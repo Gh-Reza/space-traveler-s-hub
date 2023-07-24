@@ -1,18 +1,19 @@
 .App {
- font-weight: normal;
+  font-weight: normal;
 }
 
 .logoimage img {
-    height: 5rem;
+  height: 5rem;
 }
 
-.navbar, .menuitems {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 3rem;
+.navbar,
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 3rem;
 }
 
 .menuitems {
-    justify-self: flex-end;
+  justify-self: flex-end;
 }
