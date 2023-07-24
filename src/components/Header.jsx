@@ -1,4 +1,6 @@
+import { NavLink } from 'react-router-dom';
 import logo from '../planet.png';
+import '../css/Header.css';
 
 const Header = () => (
   <nav className="navbar">
@@ -8,9 +10,30 @@ const Header = () => (
       </span>
     </div>
     <div className="menuitems">
-      <span className="menu">Rockets</span>
-      <span className="menu">Missions</span>
-      <span className="menu">My profile</span>
+      <span className="menu">
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? 'active-rout' : 'unactive')}
+        >
+          Rockets
+        </NavLink>
+      </span>
+      <span className="menu">
+        <NavLink
+          to="/missions"
+          className={({ isActive }) => (isActive ? 'active-rout' : 'unactive')}
+        >
+          Missions
+        </NavLink>
+      </span>
+      <span className="menu">
+        <NavLink
+          to="/profile"
+          className={({ isActive }) => (isActive ? 'active-rout' : 'unactive')}
+        >
+          My profile
+        </NavLink>
+      </span>
     </div>
   </nav>
 );
