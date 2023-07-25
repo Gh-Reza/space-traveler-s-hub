@@ -13,7 +13,7 @@ const Rockets = () => {
       if (rocket.id === id) {
         return {
           ...rocket,
-          booked: true,
+          booked: !rocket.booked,
         };
       }
       return rocket;
