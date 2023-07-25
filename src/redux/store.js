@@ -1,6 +1,6 @@
 import { configureStore, applyMiddleware } from '@reduxjs/toolkit';
 import rocketReducer from './rockets/rocketsslice';
-import missionsReducer from './missions/miissionsSlice';
+import missionsReducer from './missions/missionsSlice';
 
 const store = configureStore({
   reducer: {

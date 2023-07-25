@@ -1,3 +1,25 @@
+.logoimage img {
+  height: 4rem;
+}
+
+.navbar {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.navbar,
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 3rem;
+}
+
+.menuitems {
+  justify-self: flex-end;
+}
+
 .active-rout {
   color: blue;
 }
