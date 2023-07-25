@@ -19,14 +19,22 @@ const rocketsSlice = createSlice({
   initialState,
   reducers: {},
   extraReducers: (builder) => {
-    builder.addCase(getRockets.fulfilled, (state, action) => {
-      const newState = {
-        ...state,
-        rockets: action.payload,
-        isLoading: true,
-      };
-      return newState;
-    });
+    builder
+      .addCase(getRockets.pending, (state) => {
+        const newState = {
+          ...state,
+          isLoading: true,
+        };
+        return newState;
+      })
+      .addCase(getRockets.fulfilled, (state, action) => {
+        const newState = {
+          ...state,
+          rockets: action.payload,
+          isLoading: false,
+        };
+        return newState;
+      });
   },
 });
 

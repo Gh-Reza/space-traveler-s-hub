@@ -3,7 +3,7 @@ import rocketReducer from './rockets/rocketsslice';
 
 const store = configureStore({
   reducer: {
-    rocketReducer,
+    rockets: rocketReducer,
   },
 }, applyMiddleware);
 
