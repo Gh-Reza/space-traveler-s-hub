@@ -1,0 +1,23 @@
+.my-profile-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 14px;
+}
+
+.my-missions,
+.my-rockets {
+  flex: 1;
+}
+
+.my-rocket {
+  padding: 12px;
+  border: solid #dcdcdc 1px;
+  color: #515151;
+  font-size: 14px;
+}
+
+.heading {
+  color: #515151;
+  margin-bottom: 12px;
+}

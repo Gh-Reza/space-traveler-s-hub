@@ -5,8 +5,9 @@ const MyRockets = () => {
   const myRockets = rockets.filter((rocket) => rocket.booked === true);
   return (
     <div className="my-rockets">
+      <h2 className="heading">My Rockets</h2>
       {myRockets.map((myRocket) => (
-        <p key={myRocket.id}>{myRocket.name}</p>
+        <p className="my-rocket" key={myRocket.id}>{myRocket.name}</p>
       ))}
     </div>
   );

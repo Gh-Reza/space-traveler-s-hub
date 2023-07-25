@@ -1,7 +1,11 @@
 import MyRockets from '../components/MyRockets';
+import '../css/MyProfile.css';
 
 const MyProfile = () => (
-  <main>
+  <main className="my-profile-container">
+    <div className="my-missions">
+      myMissions
+    </div>
     <MyRockets />
   </main>
 );
