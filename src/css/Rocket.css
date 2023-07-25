@@ -1,0 +1,40 @@
+.rockets {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+.rocket {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.img-box img {
+  width: 200px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+.btnc {
+  background-color: rgb(0, 110, 255);
+  color: #fff;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+}
