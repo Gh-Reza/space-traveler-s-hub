@@ -9,10 +9,10 @@ const Mission = ({ mission }) => (
       {mission.description}
     </td>
     <td>
-      mission status
+      Not A Member
     </td>
     <td>
-      <button type="button">Join Mission</button>
+      <button type="button" className="join-btn">Join Mission</button>
     </td>
   </>
 );

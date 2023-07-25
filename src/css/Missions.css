@@ -1,0 +1,33 @@
+.missions-table {
+    width: 90%;
+    margin-left: 3rem;
+}
+
+table, th, td {
+    text-align: left;
+    padding: 0.5rem;
+    border-collapse:collapse;
+    border: 1px solid rgb(185, 184, 184);
+   
+}
+
+.description-column {
+    width: 62%;
+}
+
+.status-column {
+    width: 13%;
+}
+
+.button-column {
+    width: 12%;
+}
+
+.join-btn {
+    height: 2rem;
+    padding: 0.5rem;
+}
+
+table tr:nth-child(odd) td{
+    background-color: rgb(239, 237, 237);
+}

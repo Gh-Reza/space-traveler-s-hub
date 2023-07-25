@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchMissions } from '../redux/missions/missionsSlice';
 import Mission from '../components/Mission';
+import '../css/Missions.css';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -19,13 +20,13 @@ const Missions = () => {
             <th>
               Mission
             </th>
-            <th>
+            <th className="description-column">
               Description
             </th>
-            <th>
+            <th className="status-column">
               Status
             </th>
-            <th>  </th>
+            <th className="button-column">  </th>
           </tr>
           {Object.values(missions)
             .flat()
