@@ -7,13 +7,18 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
   const neededData = data.map((d) => ({
     id: d.rocket_id,
     name: d.rocket_name,
-    type: d.rocket_type,
+    description: d.description,
     image: d.flickr_images[0],
+    booked: false,
   }));
   return neededData;
 });
 
-const initialState = {};
+const initialState = {
+  rockets: [],
+  isLoading: false,
+  error: false,
+};
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
@@ -24,6 +29,7 @@ const rocketsSlice = createSlice({
         const newState = {
           ...state,
           isLoading: true,
+          error: false,
         };
         return newState;
       })
@@ -32,6 +38,15 @@ const rocketsSlice = createSlice({
           ...state,
           rockets: action.payload,
           isLoading: false,
+          error: false,
+        };
+        return newState;
+      })
+      .addCase(getRockets.rejected, (state, action) => {
+        const newState = {
+          ...state,
+          isLoading: false,
+          error: action.error.message,
         };
         return newState;
       });

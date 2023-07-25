@@ -1,3 +1,13 @@
-body {
+* {
+  scroll-behavior: smooth;
+  padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  margin: 0 auto;
+  color: #333;
 }
