@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 import Rockets from './pages/Rockets';
 import Missions from './pages/Missions';
-import MyProfile from './pages/MyProfile.js';
+import MyProfile from './pages/MyProfile';
 import store from './redux/store';
 import { getRockets } from './redux/rockets/rocketsslice';
 
