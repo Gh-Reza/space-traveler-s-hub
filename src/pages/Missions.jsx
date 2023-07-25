@@ -11,8 +11,7 @@ const Missions = () => {
   }, [dispatch]);
   const missions = useSelector((state) => state.missions.missions);
   const isLoading = useSelector((state) => state.missions.isLoading);
-  console.log(isLoading);
-  if (isLoading) {
+  if (!isLoading) {
     return (
       <div>
         <table className="missions-table">
