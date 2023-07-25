@@ -15,8 +15,8 @@ const fetchMissions = createAsyncThunk('missions//fetch', async () => {
 
 const initialState = {
   missions: [],
-  joined: false,
   error: undefined,
+  isLoading: false,
 };
 const missionsSlice = createSlice({
   name: 'missions',
@@ -26,12 +26,15 @@ const missionsSlice = createSlice({
     builder
       .addCase(fetchMissions.pending, (state) => {
         state.error = undefined;
+        state.isLoading = true;
       })
       .addCase(fetchMissions.fulfilled, (state, action) => {
         state.missions = action.payload;
+        state.isLoading = true;
       })
       .addCase(fetchMissions.rejected, (state, action) => {
         state.error = action.error.message;
+        state.isLoading = true;
       });
   },
 });

@@ -6,7 +6,7 @@ const Missions = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMissions());
-  }, []);
+  }, [dispatch]);
   const missions = useSelector((state) => state.missions);
     <div>
       <h2>
