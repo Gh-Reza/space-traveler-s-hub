@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchMissions } from '../redux/missions/miissionsSlice';
+import { fetchMissions } from '../redux/missions/missionsSlice';
+import Mission from '../components/Mission';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -30,18 +31,7 @@ const Missions = () => {
             .flat()
             .map((mission, index) => (
               <tr key={Object.keys(missions)[index]}>
-                <td>
-                  {mission.mission_name}
-                </td>
-                <td>
-                  {mission.description}
-                </td>
-                <td>
-                  mission status
-                </td>
-                <td>
-                  <button type="button">Join Mission</button>
-                </td>
+                <Mission mission={mission} />
               </tr>
             ))}
           ;
