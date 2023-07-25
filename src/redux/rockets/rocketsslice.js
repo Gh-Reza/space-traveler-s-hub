@@ -8,6 +8,7 @@ export const getRockets = createAsyncThunk('rockets/getRockets', async () => {
     id: d.rocket_id,
     name: d.rocket_name,
     type: d.rocket_type,
+    image: d.flickr_images[0],
   }));
   return neededData;
 });
