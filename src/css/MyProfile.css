@@ -10,7 +10,8 @@
   flex: 1;
 }
 
-.my-rocket, .my-mission {
+.my-rocket,
+.my-mission {
   padding: 12px;
   border: solid #dcdcdc 1px;
   color: #515151;
