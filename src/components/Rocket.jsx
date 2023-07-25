@@ -9,7 +9,10 @@ const Rocket = ({
     </div>
     <div className="content-container">
       <h3 className="name">{name}</h3>
-      <p className="description">{description}</p>
+      <p className="description">
+        {isBooked ? <span className="badge">Reserved</span> : <span> </span>}
+        {description}
+      </p>
       {isBooked ? (
         <button onClick={() => onCh(id)} className="btn-outline" type="button">
           Cancel Reservation
