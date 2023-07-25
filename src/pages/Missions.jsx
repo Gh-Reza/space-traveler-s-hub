@@ -1,14 +1,8 @@
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { fetchMissions } from '../redux/missions/missionsSlice';
+import { useSelector } from 'react-redux';
 import Mission from '../components/Mission';
 import '../css/Missions.css';
 
 const Missions = () => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
   const missions = useSelector((state) => state.missions.missions);
   const isLoading = useSelector((state) => state.missions.isLoading);
   if (!isLoading) {
