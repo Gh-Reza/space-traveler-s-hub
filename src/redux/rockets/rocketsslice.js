@@ -22,7 +22,12 @@ const initialState = {
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
-  reducers: {},
+  reducers: {
+    updateRockets: (state, action) => ({
+      ...state,
+      rockets: action.payload,
+    }),
+  },
   extraReducers: (builder) => {
     builder
       .addCase(getRockets.pending, (state) => {
@@ -53,4 +58,5 @@ const rocketsSlice = createSlice({
   },
 });
 
+export const { updateRockets } = rocketsSlice.actions;
 export default rocketsSlice.reducer;
