@@ -24,11 +24,35 @@ td {
   width: 12%;
 }
 
-.join-btn {
+.join-btn,
+.leave-btn {
   height: 2rem;
   padding: 0.5rem;
+  border-radius: 8%;
+  border-width: 2px;
+}
+
+.leave-btn {
+  border-color: rgb(214, 76, 76);
+  color: rgb(214, 76, 76);
 }
 
 table tr:nth-child(odd) td {
   background-color: rgb(239, 237, 237);
+}
+
+.status-active,
+.status-not-active {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.status-not-active {
+  background-color: rgb(151, 149, 149);
+}
+
+.status-active {
+  background-color: rgb(62, 142, 148);
 }
