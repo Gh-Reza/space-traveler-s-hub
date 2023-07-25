@@ -1,6 +1,5 @@
-import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRockets, updateRockets } from '../redux/rockets/rocketsslice';
+import { updateRockets } from '../redux/rockets/rocketsslice';
 import Rocket from '../components/Rocket';
 import '../css/Rocket.css';
 
@@ -20,10 +19,6 @@ const Rockets = () => {
     });
     dispatch(updateRockets(newArr));
   };
-
-  useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
 
   return (
     <main className="rockets">
