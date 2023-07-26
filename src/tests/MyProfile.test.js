@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import store from '../redux/store';
 import '@testing-library/jest-dom/extend-expect';
-import MyProfile from '../pages/MyProfile';
+import MyProfile from '../pages/myprofile';
 
 describe('MyProfile component unit test', () => {
   const component = (
