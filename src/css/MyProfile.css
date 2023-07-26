@@ -15,7 +15,9 @@
   padding: 12px;
   border: solid #dcdcdc 1px;
   color: #515151;
-  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 5px;
 }
 
 .heading {
