@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission unit test Mission Renders Properly  1`] = `
+Array [
+  <td
+    className="mission-name"
+  >
+    MockName
+  </td>,
+  <td
+    className="mission-description"
+  >
+    Mock detail
+  </td>,
+  <td>
+    <span
+      className="status-not-active"
+    >
+      Not A Member
+    </span>
+  </td>,
+  <td>
+    <button
+      className="join-btn"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </td>,
+]
+`;
