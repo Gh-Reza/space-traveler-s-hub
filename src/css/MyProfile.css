@@ -19,12 +19,14 @@
   line-height: 1.5rem;
 }
 
-.my-mission:first-of-type, .my-rocket:first-of-type  {
+.my-mission:first-of-type,
+.my-rocket:first-of-type {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.my-mission:last-of-type, .my-rocket:last-of-type  {
+.my-mission:last-of-type,
+.my-rocket:last-of-type {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }

@@ -13,7 +13,7 @@ describe('Header Component Unit Test', () => {
     render(
       <Router>
         <Header />
-      </Router>
+      </Router>,
     );
 
     expect(screen.getByText("Space Travelers' Hub")).toBeInTheDocument();

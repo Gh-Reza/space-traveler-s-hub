@@ -9,8 +9,8 @@ describe('My Profile My Missions Component unit test', () => {
   test('MyMissions Renders Properly ', () => {
     const tree = renderer.create(
       <Provider store={store}>
-        <MyMissions/>
-      </Provider>
+        <MyMissions />
+      </Provider>,
     ).toJSON();
     expect(tree).toMatchSnapshot();
   });

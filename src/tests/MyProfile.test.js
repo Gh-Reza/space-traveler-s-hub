@@ -16,7 +16,7 @@ describe('MyProfile component unit test', () => {
     expect(tree).toMatchSnapshot();
   });
   test('MyProfile Contains Titles ', () => {
-     render(component);
+    render(component);
     expect(screen.getByText('My Missions')).toBeInTheDocument();
     expect(screen.getByText('My Rockets')).toBeInTheDocument();
   });
