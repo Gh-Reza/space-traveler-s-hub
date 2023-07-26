@@ -25,7 +25,9 @@ const rocketsSlice = createSlice({
   reducers: {
     updateRockets: (state, action) => ({
       ...state,
-      rockets: action.payload,
+      rockets: state.rockets.map((rocket) => (
+        rocket.id === action.payload ? { ...rocket, booked: !rocket.booked } : { ...rocket }
+      )),
     }),
   },
   extraReducers: (builder) => {
