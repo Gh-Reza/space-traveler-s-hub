@@ -24,7 +24,6 @@ const Rocket = ({
       )}
     </div>
   </div>
-  // <div>ehllp</div>
 );
 
 Rocket.propTypes = {
