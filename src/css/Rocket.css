@@ -29,29 +29,36 @@
 .description {
   font-size: 14px;
   color: #4a4a4a;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .btnc {
   background-color: rgb(0, 110, 255);
   color: #fff;
-  padding: 6px 12px;
+  padding: 12px 24px;
   border: none;
   border-radius: 4px;
 }
 
 .btn-outline {
   background-color: transparent;
-  border: 2px #b5b5b5 solid;
-  color: #9d9d9d;
+  border: 1.5px #919191 solid;
+  color: #919191;
   border-radius: 4px;
-  padding: 6px 12px;
+  padding: 12px 24px;
+}
+
+.btnc:hover,
+.btn-outline:hover {
+  cursor: pointer;
 }
 
 .badge {
-  background-color: green;
+  background-color: #15aabf;
   color: #fff;
-  font-size: 10px;
-  padding: 2px 3px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 5px;
   border-radius: 4px;
+  margin-right: 4px;
 }
