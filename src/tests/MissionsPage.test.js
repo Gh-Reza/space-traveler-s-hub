@@ -16,5 +16,6 @@ describe('Mission Page unit test', () => {
     expect(screen.getByText('Mission')).toBeInTheDocument();
     expect(screen.getByText('Description')).toBeInTheDocument();
     expect(screen.getByText('Status')).toBeInTheDocument();
+    expect(screen.getByRole('table')).toBeInTheDocument();
   });
 });
