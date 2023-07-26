@@ -17,7 +17,16 @@
   color: #515151;
   font-size: 1rem;
   line-height: 1.5rem;
-  border-radius: 5px;
+}
+
+.my-mission:first-of-type, .my-rocket:first-of-type  {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.my-mission:last-of-type, .my-rocket:last-of-type  {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .heading {
