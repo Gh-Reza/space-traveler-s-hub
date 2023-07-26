@@ -8,15 +8,6 @@ const Rockets = () => {
   const rockets = useSelector((store) => store.rockets.rockets);
 
   const handleClick = (id) => {
-    // const newArr = rockets.map((rocket) => {
-    //   if (rocket.id === id) {
-    //     return {
-    //       ...rocket,
-    //       booked: !rocket.booked,
-    //     };
-    //   }
-    //   return rocket;
-    // });
     dispatch(updateRockets(id));
   };
 
