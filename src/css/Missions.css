@@ -12,6 +12,10 @@ td {
   border: 1px solid rgb(185, 184, 184);
 }
 
+th {
+  font-size: 1.2rem;
+}
+
 .description-column {
   width: 62%;
 }
@@ -45,8 +49,8 @@ table tr:nth-child(odd) td {
 .status-not-active {
   padding: 0.3rem;
   border-radius: 0.5rem;
-  font-weight: bold;
   color: white;
+  font-size: 0.9rem;
 }
 
 .status-not-active {
@@ -55,4 +59,13 @@ table tr:nth-child(odd) td {
 
 .status-active {
   background-color: rgb(62, 142, 148);
+}
+
+.mission-description {
+  font-size: 0.9rem;
+  line-height: normal;
+}
+
+.mission-name {
+  font-weight: bold;
 }
