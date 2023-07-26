@@ -6,12 +6,13 @@ import '@testing-library/jest-dom/extend-expect';
 import Rockets from '../pages/Rockets';
 
 describe('Rockets Page unit test', () => {
-  const tree = render(
+  const component = (
     <Provider store={store}>
       <Rockets />
-    </Provider>,
+    </Provider>
   );
   test('Rockets page renders ', () => {
+    const tree = render(component);
     expect(tree).toMatchSnapshot();
   });
 });
