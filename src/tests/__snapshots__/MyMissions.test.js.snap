@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Profile My Missions Component unit test MyMissions Renders Properly  1`] = `
+<div
+  className="my-missions"
+>
+  <h2
+    className="heading"
+  >
+    My Missions
+  </h2>
+</div>
+`;
