@@ -12,8 +12,8 @@ const Mission = ({ mission }) => {
 
   return (
     <>
-      <td>{missionName}</td>
-      <td>{description}</td>
+      <td className="mission-name">{missionName}</td>
+      <td className="mission-description">{description}</td>
       <td><span className={reserved ? 'status-active' : 'status-not-active'}>{reserved ? 'Active Member' : 'Not A Member'}</span></td>
       <td>
         <button type="button" onClick={handleJoinMission} className={reserved ? 'leave-btn' : 'join-btn'}>

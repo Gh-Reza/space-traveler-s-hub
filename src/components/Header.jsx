@@ -4,10 +4,11 @@ import '../css/Header.css';
 
 const Header = () => (
   <nav className="navbar">
-    <div>
+    <div className="title-logo">
       <span className="logoimage">
         <img src={logo} alt="planet-icon" />
       </span>
+      <h1>Space Travelers&apos; Hub</h1>
     </div>
     <div className="menuitems">
       <span className="menu">
@@ -29,7 +30,7 @@ const Header = () => (
       <span className="menu">
         <NavLink
           to="/profile"
-          className={({ isActive }) => (isActive ? 'active-rout' : 'unactive')}
+          className={({ isActive }) => (isActive ? 'myprofile active-rout' : 'myprofile unactive')}
         >
           My profile
         </NavLink>
