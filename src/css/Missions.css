@@ -1,0 +1,71 @@
+.missions-table {
+  width: 90%;
+  margin-left: 3rem;
+}
+
+table,
+th,
+td {
+  text-align: left;
+  padding: 0.5rem;
+  border-collapse: collapse;
+  border: 1px solid rgb(185, 184, 184);
+}
+
+th {
+  font-size: 1.2rem;
+}
+
+.description-column {
+  width: 62%;
+}
+
+.status-column {
+  width: 13%;
+}
+
+.button-column {
+  width: 12%;
+}
+
+.join-btn,
+.leave-btn {
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 8%;
+  border-width: 2px;
+}
+
+.leave-btn {
+  border-color: rgb(214, 76, 76);
+  color: rgb(214, 76, 76);
+}
+
+table tr:nth-child(odd) td {
+  background-color: rgb(239, 237, 237);
+}
+
+.status-active,
+.status-not-active {
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.status-not-active {
+  background-color: rgb(151, 149, 149);
+}
+
+.status-active {
+  background-color: rgb(62, 142, 148);
+}
+
+.mission-description {
+  font-size: 0.9rem;
+  line-height: normal;
+}
+
+.mission-name {
+  font-weight: bold;
+}

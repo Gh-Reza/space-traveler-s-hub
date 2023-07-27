@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission Page unit test Mission Page Renders Properly  1`] = `
+<div>
+  <table
+    className="missions-table"
+  >
+    <tr>
+      <th>
+        Mission
+      </th>
+      <th
+        className="description-column"
+      >
+        Description
+      </th>
+      <th
+        className="status-column"
+      >
+        Status
+      </th>
+      <th
+        className="button-column"
+      >
+          
+      </th>
+    </tr>
+    ;
+  </table>
+  <p />
+</div>
+`;

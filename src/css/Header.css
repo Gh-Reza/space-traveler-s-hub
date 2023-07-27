@@ -1,0 +1,45 @@
+.logoimage img {
+  height: 4rem;
+}
+
+.navbar {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.navbar,
+.menuitems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title-logo {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-left: 2rem;
+}
+
+.menuitems {
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.active-rout {
+  color: blue;
+}
+
+.unactive {
+  color: blue;
+  text-decoration: none;
+}
+
+.myprofile::before {
+  content: "|";
+  padding-right: 1.5rem;
+  color: rgb(70, 69, 69);
+}

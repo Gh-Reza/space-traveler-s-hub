@@ -1,0 +1,37 @@
+.my-profile-container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  gap: 14px;
+}
+
+.my-missions,
+.my-rockets {
+  flex: 1;
+}
+
+.my-rocket,
+.my-mission {
+  padding: 12px;
+  border: solid #dcdcdc 1px;
+  color: #515151;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.my-mission:first-of-type,
+.my-rocket:first-of-type {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.my-mission:last-of-type,
+.my-rocket:last-of-type {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.heading {
+  color: #515151;
+  margin-bottom: 12px;
+}
